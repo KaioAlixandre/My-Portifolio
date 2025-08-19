@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Kaio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background animado de código binário -->
+    <div class="binary-background"></div>
+    
+    <!--menu superior-->
+    <header class="header">
+        <div class="logo">Kaio</div>
+        <nav class="navbar">
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio" class="menu-link">Início</a></li>
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#skills" class="menu-link">Skills</a></li>
+                <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li><a href="#servicos" class="menu-link">Serviços</a></li>
+                <li><a href="#contatos" class="menu-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--apresentação-->
+    <main id="inicio" class="cabecalho">
+        <div class="home-img animate__animated animate__zoomIn">
+            <img src="img/perfil.jpg" alt="foto de perfil" />
+        </div>
+
+        <div class="conteudo-apresentacao">
+            <h3 class="animate__animated animate__fadeInUp">Olá, meu nome é</h3>
+            <h1 class="animate__animated animate__fadeInUp animate__delay-0-5s">Kaio Alixandre</h1>
+            <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Eu sou <span class="multiple-text"></span></h3>
+            <p class="animate__animated animate__fadeInUp animate__delay-1-5s">
+                Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras e experiências únicas que fazem a diferença.
+            </p>
+
+            <div class="social-media animate__animated animate__fadeInUp animate__delay-2s">
+                <a href="https://wa.me/5599996458528?text=Olá%20Gostaria%20de%20mais%20informações"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://github.com/KaioAlixandre" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/kaioalixandre/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/kaio/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="mailto:kaioalexandre2681@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+            </div>
+            <a href="#projetos" class="btn animate__animated animate__fadeInUp animate__delay-2-5s">Veja meus projetos</a>
+        </div>
+    </main>
+
+    <!--sobre mim-->
+    <section class="sobre" id="sobre">
+        <h2 class="sobre-titulo-personalizado-fora-quadro animate__animated animate__fadeInUp">Sobre</h2>
+        <div class="sobre-quadro animate__animated animate__zoomIn">
+            <h2 class="sobre-titulo-personalizado">Muito prazer, <span class="sobre-titulo-destaque">eu sou Kaio!</span></h2>
+            <p class="sobre-texto">
+                Sou um <span style="color: var(--secundaria); font-weight: 600;">desenvolvedor apaixonado por criar experiências digitais</span> que unem tecnologia, design e propósito. Minha missão é transformar ideias em soluções que encantam e resolvem problemas de verdade.
+            </p>
+
+            <div class="sobre-tags">
+                <span class="tag">Front-end & Back-end</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Mobile</span>
+                <span class="tag">Cloud</span>
+            </div>
+
+            <p class="sobre-texto">
+                <br>
+                Com experiência em <span style="color: var(--secundaria); font-weight: 600;">JavaScript, TypeScript, React, Node.js</span> e tecnologias modernas, estou sempre em busca de aprender novas ferramentas e aprimorar minhas habilidades para entregar soluções de qualidade.
+            </p>
+        </div>
+    </section>
+
+    <!--conhecimentos e habilidades-->
+    <section id="skills" class="skills">
+        <h2 class="skills-titulo animate__animated animate__fadeInUp">Skills</h2>
+
+        <div class="skills-filtros animate__animated animate__fadeInUp animate__delay-0-5s">
+            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="backend">Backend</button>
+            <button class="filtro-btn" data-categoria="frontend">Frontend</button>
+            <button class="filtro-btn" data-categoria="banco-de-dados">Banco de Dados</button>
+            <button class="filtro-btn" data-categoria="ui-ux-design">UI/UX Design</button>
+        </div>
+
+        <div class="skills-grade">
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="frontend">
+                <div class="skill-header">
+                    <i class='bx bxl-react skill-icon'></i>
+                    <h3 class="skill-name">React.js</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">90%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="backend">
+                <div class="skill-header">
+                    <i class='bx bxl-nodejs skill-icon'></i>
+                    <h3 class="skill-name">Node.js</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">85%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="frontend backend">
+                <div class="skill-header">
+                    <i class='bx bxl-javascript skill-icon'></i>
+                    <h3 class="skill-name">JavaScript</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">95%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="frontend backend">
+                <div class="skill-header">
+                    <i class='bx bxl-typescript skill-icon'></i>
+                    <h3 class="skill-name">TypeScript</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">80%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="backend">
+                <div class="skill-header">
+                    <i class='bx bxl-python skill-icon'></i>
+                    <h3 class="skill-name">Python</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">75%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="banco-de-dados">
+                <div class="skill-header">
+                    <i class='devicon-postgresql-plain colored skill-icon'></i>
+                    <h3 class="skill-name">PostgreSQL</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">80%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="banco-de-dados">
+                <div class="skill-header">
+                    <i class='devicon-mongodb-plain colored skill-icon'></i>
+                    <h3 class="skill-name">MongoDB</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">75%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="ui-ux-design">
+                <div class="skill-header">
+                    <i class='bx bxl-figma skill-icon'></i>
+                    <h3 class="skill-name">Figma</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">70%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+
+            <div class="skill-card animate__animated animate__zoomIn" data-categorias="frontend">
+                <div class="skill-header">
+                    <i class='bx bxl-tailwind-css skill-icon'></i>
+                    <h3 class="skill-name">Tailwind CSS</h3>
+                </div>
+                <div class="skill-details">
+                    <span class="skill-percentage">85%</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="skill-description">Proficiência</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="skills-subtitulo animate__animated animate__fadeInUp">Habilidades adicionais</h3>
+        <div class="habilidades-adicionais animate__animated animate__fadeInUp animate__delay-0-5s">
+            <span class="extra-tag">Git</span>
+            <span class="extra-tag">Docker</span>
+            <span class="extra-tag">AWS</span>
+            <span class="extra-tag">Next.js</span>
+            <span class="extra-tag">CI/CD</span>
+            <span class="extra-tag">Agile</span>
+            <span class="extra-tag">REST API</span>
+            <span class="extra-tag">GraphQL</span>
+        </div>
+    </section>
+
+    <!--projetos-->
+    <section class="" >
+        <h2 class="projetos-titulo animate__animated animate__fadeInUp">Projetos</h2>
+            <div  class="sobre-quadro projeto-card animate__animated animate__fadeInUp">
+              <img src="img/ChatGPT Image 20 de jun. de 2025, 09_22_37.png" alt="" class="projeto-imagem"> 
+              <div class="projeto-info">
+                <h3 class="projeto-card-titulo">MK Strore - Loja Virtual</h3>
+                <p class="projeto-card-descricao">MK Store é um projeto de e-commerce simples e funcional. A loja exibe uma variedade de produtos como águas, carvões, grãos e rações com sistema de pesquisa, adicionar ao carrinho, modal de confirmação e finalização de pedido com nome e endereço.</p>
+                <div class="projeto-tecnologias">
+                    <i class='bx bxl-html5 projeto-tech-icon' title="HTML5"></i>
+                    <i class='bx bxl-css3 projeto-tech-icon' title="CSS3"></i>
+                    <i class='bx bxl-javascript projeto-tech-icon' title="JavaScript"></i>
+                </div>
+                <divc class="projeto-botoes"> 
+                    <button class="btn-projeto detalhes" data-projeto-id="mk-store">Mais Detalhes</button>  
+                    <a href="https://github.com/KaioAlixandre/Monitoramento-de-entregas-MKRa-oes" target="_blank" class="btn-projeto ver-projeto">Ver Projeto</a>
+                </div>
+            </div> 
+            </div>
+
+            <div class="sobre-quadro projeto-card animate__animated animate__fadeInUp">
+                <img src="https://via.placeholder.com/400x220/39ff14/000000?text=Task+Manager" alt="Imagem do Projeto: Gerenciador de Tarefas" class="projeto-imagem">
+                <div class="projeto-info">
+                    <h3 class="projeto-card-titulo">Simulador de Banco</h3>
+                    <p class="projeto-card-descricao">Simulaçao de um sistema bancario, com interfaces graficas e conexao ao banco de dados.</p>
+
+                    <div class="projeto-tecnologias">
+                        <i class='bx bxl-react projeto-tech-icon' title="React"></i>
+                        <i class='bx bxl-typescript projeto-tech-icon' title="TypeScript"></i>
+                        <i class='bx bxl-nodejs projeto-tech-icon' title="Node.js"></i>
+                        <i class='devicon-mongodb-plain colored projeto-tech-icon' title="MongoDB"></i>
+                    </div>
+
+                    <div class="projeto-botoes">
+                        <button class="btn-projeto detalhes" data-projeto-id="task-manager">Mais Detalhes</button>
+                        <a href="https://github.com/KaioAlixandre/Sistema-Bancario" target="_blank" class="btn-projeto ver-projeto">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <!-- Modal para detalhes dos projetos -->
+    <div id="projeto-modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar-modal">&times;</span>
+            <img id="modal-imagem" src="/placeholder.svg" alt="Imagem do Projeto" class="modal-imagem">
+            <h3 id="modal-titulo" class="modal-titulo"></h3>
+            <div class="modal-tecnologias" id="modal-tecnologias"></div>
+            <p id="modal-descricao-longa" class="modal-descricao-longa"></p>
+            <div class="modal-links">
+                <a id="modal-repo-link" href="#" target="_blank" class="btn-modal">Ver no GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!--serviços oferecidos-->
+    <section id="servicos" class="servicos-section">
+        <h2 class="servicos-titulo-principal animate__animated animate__fadeInUp">Serviços</h2>
+        <div class="servicos-conteudo">
+            <div class="servico animate__animated animate__zoomIn">
+                <i class='bx bx-code-alt servicos-icon' title="Desenvolvimento Web"></i>
+                <h3 class="servicos-titulo">Desenvolvimento Web</h3>
+                <p class="servicos-descricao">Criação de sites e aplicações web modernas, responsivas e otimizadas para performance e SEO.</p>
+            </div>
+            <div class="servico animate__animated animate__zoomIn">
+                <i class='bx bx-mobile-alt servicos-icon' title="Desenvolvimento Mobile"></i>
+                <h3 class="servicos-titulo">Desenvolvimento Mobile</h3>
+                <p class="servicos-descricao">Desenvolvimento de aplicativos móveis nativos e híbridos para iOS e Android.</p>
+            </div>
+            <div class="servico animate__animated animate__zoomIn">
+                <i class='bx bx-palette servicos-icon' title="UI/UX Design"></i>
+                <h3 class="servicos-titulo">UI/UX Design</h3>
+                <p class="servicos-descricao">Design de interfaces intuitivas e experiências de usuário que convertem e encantam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--entre em contato-->
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo animate__animated animate__fadeInUp">Contato</h2>
+        <div class="contatos-conteudo animate__animated animate__fadeInUp animate__delay-0-5s">
+            <p class="contatos-texto">Vamos trabalhar juntos? Entre em contato comigo:</p>
+            <div class="contatos-sociais">
+                <a href="https://www.linkedin.com/in/kaio/" target="_blank" class="contato-link"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/kaio" target="_blank" class="contato-link"><i class="bx bxl-github"></i> GitHub</a>
+                <a href="https://wa.me/5511999999999?text=Olá%20Gostaria%20de%20mais%20informações" target="_blank" class="contato-link"><i class="bx bxl-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/kaio/" target="_blank" class="contato-link"><i class="bx bxl-instagram"></i> Instagram</a>
+                <a href="mailto:kaio@email.com" target="_blank" class="contato-link"><i class="bx bx-envelope"></i> E-mail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Kaio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
