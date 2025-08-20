@@ -60,7 +60,7 @@ const detalheBtns = document.querySelectorAll(".btn-projeto.detalhes")
 const projetos = {
   "mk-store": {
     titulo: "E-commerce Moderno",
-    imagem: "https://via.placeholder.com/800x400/4f46e5/ffffff?text=MK+Store",
+    imagem: "img/MK.jpeg",
     tecnologias: ["bx bxl-react", "bx bxl-nodejs", "devicon-postgresql-plain colored", "bx bxl-tailwind-css"],
     descricaoLonga:
       "MK Store é um projeto de e-commerce funcional e acessível, desenvolvido com o objetivo de oferecer uma plataforma prática para a venda de produtos agrícolas. Ele simula a experiência completa de uma loja virtual, contemplando todas as etapas essenciais para um fluxo de compra simplificado e eficiente.",
@@ -69,7 +69,7 @@ const projetos = {
   "task-manager": {
     titulo: "Simulador de Banco",
     imagem: "https://via.placeholder.com/800x400/7c3aed/ffffff?text=Task+Manager+Pro",
-    tecnologias: ["bx bxl-react", "bx bxl-typescript", "bx bxl-nodejs", "devicon-mongodb-plain colored"],
+    tecnologias: ["bx bxl-java", "bx bxl-typescript", "bx bxl-nodejs", "devicon-mongodb-plain colored"],
     descricaoLonga:
       "Um sistema completo de simulação bancária, desenvolvido com foco em reforçar os conceitos fundamentais da programação orientada a objetos (POO) e da arquitetura de sistemas. A aplicação simula o ambiente de um banco real, permitindo o gerenciamento de contas, operações financeiras e controle de transações de forma segura e estruturada.",
     repoLink: "https://github.com/KaioAlixandre/Sistema-Bancario",
